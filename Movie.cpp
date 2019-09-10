@@ -3,8 +3,8 @@ using namespace std;
 
 Movie::Movie()
 {
-	string title;
-	int year;
+	title = "No Title";
+	year = 0;
 }
 
 Movie::Movie(const string& movieTitle, int movieYear)
