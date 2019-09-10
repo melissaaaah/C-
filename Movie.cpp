@@ -10,7 +10,7 @@ Movie::Movie()
 Movie::Movie(const string& movieTitle, int movieYear)
 {
 	title = movieTitle;
-	year = movieYear;
+	year = movieYear; 
 }
 
 string Movie::getMovieTitle() const
