@@ -2,18 +2,17 @@
 	Huynh, Melissa
 
 	September 10, 2019
-	CS A250
 
+	CS A250
 	Lab 2
 */
-
 
 #ifndef MOVIE_H
 #define MOVIE_H 
 
 #include <iostream>
 #include <string>
-#pragma once
+
 class Movie
 {
 public:
@@ -24,7 +23,7 @@ public:
 	int getYear() const;
 
 	void setMovieTitle(const std::string& movieTitle);
-	void setYear(int& movieYear);
+	void setYear(int movieYear);
 	void print() const;
 
 	bool sameYear(const Movie&) const;

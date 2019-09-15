@@ -1,3 +1,12 @@
+/*
+	Huynh, Melissa
+
+	September 10, 2019
+
+	CS A250
+	Lab 2
+*/
+
 #include "Movie.h"
 using namespace std;
 
@@ -23,12 +32,12 @@ int Movie::getYear() const
 	return year;
 }
 
-void Movie :: setMovieTitle(const string& newTitle)
+void Movie::setMovieTitle(const string& newTitle)
 {
 	title = newTitle;
 }
 
-void Movie::setYear(int& newYear)
+void Movie::setYear(int newYear)
 {
 	year = newYear;
 }
@@ -40,8 +49,7 @@ void Movie::print() const
 
 bool Movie::sameYear(const Movie& movie2) const
 {
-	return (title == movie2.title
-		&& year == movie2.year);
+	return (year == movie2.year);
 }
 
 Movie::~Movie()
